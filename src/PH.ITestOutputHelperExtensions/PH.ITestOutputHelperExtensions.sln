@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PH.ITestOutputHelperExtensions", "PH.ITestOutputHelperExtensions\PH.ITestOutputHelperExtensions.csproj", "{09482275-58D2-492D-83C6-B78DC1BB84CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PH.ITestOutputHelperExtensions.XUnitTestProject", "PH.ITestOutputHelperExtensions.XUnitTestProject\PH.ITestOutputHelperExtensions.XUnitTestProject.csproj", "{183EED6C-A62D-4EF7-ACAB-D823B64A1994}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09482275-58D2-492D-83C6-B78DC1BB84CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09482275-58D2-492D-83C6-B78DC1BB84CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09482275-58D2-492D-83C6-B78DC1BB84CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09482275-58D2-492D-83C6-B78DC1BB84CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183EED6C-A62D-4EF7-ACAB-D823B64A1994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183EED6C-A62D-4EF7-ACAB-D823B64A1994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183EED6C-A62D-4EF7-ACAB-D823B64A1994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183EED6C-A62D-4EF7-ACAB-D823B64A1994}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F69343C-A853-4ABA-B7CF-D9D52AE83F3F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <!--NUGET PKG-->
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    
+    <PackageId>PH.ITestOutputHelperExtensions</PackageId>
+    
+    <Description>
+      TestOutputHelper Extensions
+    </Description>
+
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+
+    
+    <PackageTags>
+      xunit, ITestOutputHelper, TestOutputHelper
+    </PackageTags>
+    
+    <!--NUGET -->
+    <PackageVersion>0.0.1</PackageVersion>
+    <IconUrl>https://raw.githubusercontent.com/paonath/Icons/master/nuget_es_img.png</IconUrl>
+    <RepositoryUrl>https://github.com/paonath/PH.ITestOutputHelperExtensions</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/paonath/PH.ITestOutputHelperExtensions</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/paonath/Icons/master/nuget_es_img.png</PackageIconUrl>
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+    
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <SourceRevisionId>build-$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <SourceRevisionId>rel-$([System.DateTime]::UtcNow.ToString("yyyyMMdd"))</SourceRevisionId>
+  </PropertyGroup>
+
+
+
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="[2.2.0,)" />
+    <PackageReference Include="xunit.abstractions" Version="2.0.3" />
+  </ItemGroup>
+</Project>

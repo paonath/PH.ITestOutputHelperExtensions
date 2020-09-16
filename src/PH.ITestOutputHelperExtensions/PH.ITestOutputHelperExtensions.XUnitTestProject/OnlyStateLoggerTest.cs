@@ -41,9 +41,9 @@ namespace PH.ITestOutputHelperExtensions.XUnitTestProject
         [Fact]
         public void GetALogger()
         {
-            var logger      = Output.GetOnlyStateLogger();
-            var loggerTyped = Output.GetOnlyStateLogger<OnlyStateLoggerTest>();
-            var isNull      = true;
+            ILogger                      logger      = Output.GetOnlyStateLogger();
+            ILogger<OnlyStateLoggerTest> loggerTyped = Output.GetOnlyStateLogger<OnlyStateLoggerTest>();
+            var                          isNull      = true;
             using (var scope = loggerTyped.BeginScope("test a scope"))
             {
                 isNull = scope == null;
